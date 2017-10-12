@@ -5,7 +5,11 @@ Készítette: Kelecsényi Anna és Csapó Dániel
 1. A feladat rövid leírása:
 
 2. Adatbázis modell:
-![  ide kattintva elérhetõ az adatbázis terv](resources/tables.png)
+	Adatbázis sémák leírása:
+![ide kattintva elérhetõ az adatbázis séma](resources/tables.png)
+	Egyed-kapcsolat diagram:
+![  ide kattintva elérhetõ az adatbázis terv](resources/tables2.png)
+Az ábra egyszerûsége végett a kapcsolótáblák nem szerepelnek az egyed-kapcsolat diagramon.
 3. Funkcionális követelmények:
 * A fõoldalon megjelenik a napi program, azaz mely filmeket mikor vetítik, a mozi mely termében, amit minden szerepkörû (user, admin, guest) felhasználó megtekinthet.
 * A filmeket kiválasztva megjelenik annak részletes leírása (cím, rendezõ, szinopszis, hossz, bevitel dátuma), valamint az összes elõadás idõpontja.
