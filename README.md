@@ -3,10 +3,12 @@ Készítette: Kelecsényi Anna és Csapó Dániel
 
 1. A feladat rövid leírása:
 Mirõl szól a projekt?
-Az alábbi projekt egy olyan program megvalósítására törekszik, amely egy multiplex mozi jegyeladásait képes kezelni. A program számos funkciói közé tartozik például a mozi által vetített filmek adatainak (cím, származás, szinkronizált-e, szinopszis, hossz, lejátszások maximális száma, korhatár besorolás) megtekinthetõsége; elõadás meghirdetése; lehetõség van a meghirdetett elõadásokra helyet foglalni stb.
-A program célközönsége:
-A program lehetséges felhasználói a mozi alkalmazottjai, akik a program segítségével képesek elõadásokat meghirdetni adott idõpontra, valamint azokat törölhetik is, amennyiben egyetlen nézõ sem foglalt rá helyet; tudnak a meghirdetett elõadásokra jegyet foglalni. A program elõnye, hogy figyeli két azonos teremben levõ elõadás ütközését, valamint korlátozza egy film párhuzamos vetíthetõségét (egyszerre maximum három teremben vetíthetõ egy film). A jegyeladások kezelését jelentõsen megkönnyíti a program azon funkciója, mely minden filmre megjeleníti az eladott jegyek számát, valamint minden elõadás esetén listázza a még szabad helyek számát.
-A program számos funkciója átláthatóbbá, könnyebben kezelhetõvé teszi a jegyeladások nyilvántartását, kezelését. Ha ugyanezen adatokat papíron vezetnék a dolgozók és onnan kéne kikeresni az egyes adatokat, sokkal nehezebb dolguk lenne, valamint sokkal tovább tartana.
+* Az alábbi projekt egy olyan program megvalósítására törekszik, amely egy multiplex mozi jegyeladásait képes kezelni. A program számos funkciói közé tartozik például a mozi által vetített filmek adatainak (cím, rendezõ, szinopszis, hossz) megtekinthetõsége; elõadás meghirdetése; lehetõség van a meghirdetett elõadásokra helyet foglalni stb.
+* A program célközönsége:
+> A program felhasználói egyrészt a mozi alkalmazottjai (admin), akik a program segítségével képesek elõadásokat meghirdetni adott idõpontra, valamint azokat törölhetik is. A lefoglalt, valamint a szabad helyeket ki tudják adni.
+> A másik felhasználói réteg (user, guest) a fentiekhez képest kevesebb funkcióval rendelkezik. Õk az elõadások kezelésére nem jogosultak, de meg tudják tekinteni, milyen filmeket vetít a mozi és mikor, stb., valamint jegyet foglalhatnak elõadásokra.
+
+* A program számos funkciója átláthatóbbá, könnyebben kezelhetõvé teszi a jegyeladások nyilvántartását, kezelését. Ha ugyanezen adatokat papíron vezetnék a dolgozók és onnan kéne kikeresni az egyes adatokat, sokkal nehezebb dolguk lenne, valamint sokkal tovább tartana.
 2. Adatbázis modell:
 	Adatbázis sémák leírása:
 ![ide kattintva elérhetõ az adatbázis séma](resources/tables.png)
