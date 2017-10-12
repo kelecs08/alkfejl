@@ -3,7 +3,11 @@ Készítette: Kelecsényi Anna és Csapó Dániel
 
 
 1. A feladat rövid leírása:
-
+A program egy mozi jegyeladásait tudja kezelni, az alábbi funkciókkal:
+* A programban megtekinthetõk a filmek adatai (cím, rendezõ, szinopszis, hossz, beviteli dátum), megjelenik minden filmre az eladott jegyek száma.
+* Adminisztrátorként lehet egy adott filmet, illetve termet kiválasztva új elõadást hirdetni adott idõpontra, valamint elõadást lehet törölni, amennyiben senki sem foglalt rá helyet. A programnak figyelnie kell, hogy két elõadás ne ütközzön az adott teremben (a film hossza után kell 15 perc takarítási idõt számolni).
+* A program listázza ki az elõadásokat idõpont szerint, és azt lehessen szûrni film, illetve terem alapján. Minden elõadásnál legyen látható, mennyi szabad hely van még rá.
+* A meghirdetett elõadásokra lehet helyet foglalni. A helyfoglalás adott székre (sor illetve oszlop megadásával) történik figyelembe véve, hogy a szék még nincs lefoglalva. A lefoglalt helyek ezek után bármikor kiadhatók. Kiadott jegyet már nem lehet újra kiadni, de foglalást lehet visszavonni.
 2. Adatbázis modell:
 ![  ide kattintva elérhetõ az adatbázis terv](resources/tables.png)
 3. Funkcionális követelmények:
