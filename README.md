@@ -8,5 +8,5 @@ mit szeretnénk az alkalmazástól?
 a feladat rövid bemutatása
 
 2. Adatbázis modell:
-![  ide kattintva elérhetõ az adatbázis terv](resources/img.png)
+![  ide kattintva elérhetõ az adatbázis terv](resources/tables.png)
 3. Funkcionális követelmények:
