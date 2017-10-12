@@ -1,13 +1,12 @@
 Beadandó feladat Alkalmazások fejlesztése nevezetû tárgyra.
 Készítette: Kelecsényi Anna és Csapó Dániel
 
-
 1. A feladat rövid leírása:
-A program egy mozi jegyeladásait tudja kezelni, az alábbi funkciókkal:
-* A programban megtekinthetõk a filmek adatai (cím, rendezõ, szinopszis, hossz, beviteli dátum), megjelenik minden filmre az eladott jegyek száma.
-* Adminisztrátorként lehet egy adott filmet, illetve termet kiválasztva új elõadást hirdetni adott idõpontra, valamint elõadást lehet törölni, amennyiben senki sem foglalt rá helyet. A programnak figyelnie kell, hogy két elõadás ne ütközzön az adott teremben (a film hossza után kell 15 perc takarítási idõt számolni).
-* A program listázza ki az elõadásokat idõpont szerint, és azt lehessen szûrni film, illetve terem alapján. Minden elõadásnál legyen látható, mennyi szabad hely van még rá.
-* A meghirdetett elõadásokra lehet helyet foglalni. A helyfoglalás adott székre (sor illetve oszlop megadásával) történik figyelembe véve, hogy a szék még nincs lefoglalva. A lefoglalt helyek ezek után bármikor kiadhatók. Kiadott jegyet már nem lehet újra kiadni, de foglalást lehet visszavonni.
+Mirõl szól a projekt?
+Az alábbi projekt egy olyan program megvalósítására törekszik, amely egy multiplex mozi jegyeladásait képes kezelni. A program számos funkciói közé tartozik például a mozi által vetített filmek adatainak (cím, származás, szinkronizált-e, szinopszis, hossz, lejátszások maximális száma, korhatár besorolás) megtekinthetõsége; elõadás meghirdetése; lehetõség van a meghirdetett elõadásokra helyet foglalni stb.
+A program célközönsége:
+A program lehetséges felhasználói a mozi alkalmazottjai, akik a program segítségével képesek elõadásokat meghirdetni adott idõpontra, valamint azokat törölhetik is, amennyiben egyetlen nézõ sem foglalt rá helyet; tudnak a meghirdetett elõadásokra jegyet foglalni. A program elõnye, hogy figyeli két azonos teremben levõ elõadás ütközését, valamint korlátozza egy film párhuzamos vetíthetõségét (egyszerre maximum három teremben vetíthetõ egy film). A jegyeladások kezelését jelentõsen megkönnyíti a program azon funkciója, mely minden filmre megjeleníti az eladott jegyek számát, valamint minden elõadás esetén listázza a még szabad helyek számát.
+A program számos funkciója átláthatóbbá, könnyebben kezelhetõvé teszi a jegyeladások nyilvántartását, kezelését. Ha ugyanezen adatokat papíron vezetnék a dolgozók és onnan kéne kikeresni az egyes adatokat, sokkal nehezebb dolguk lenne, valamint sokkal tovább tartana.
 2. Adatbázis modell:
 ![  ide kattintva elérhetõ az adatbázis terv](resources/tables.png)
 3. Funkcionális követelmények:
