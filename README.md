@@ -1,5 +1,5 @@
-##Beadandó feladat Alkalmazások fejlesztése nevezetû tárgyra.##
-###Készítette: Kelecsényi Anna és Csapó Dániel###
+## Beadandó feladat Alkalmazások fejlesztése nevezetû tárgyra. ##
+### Készítette: Kelecsényi Anna és Csapó Dániel ###
 
 1. A feladat rövid leírása:
 
