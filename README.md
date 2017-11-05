@@ -3,7 +3,7 @@
 
 1. ## Követelményanalízis ##
 
-1.1. ### A feladat rövid leírása: ###
+   1.1. ### A feladat rövid leírása: ###
 
 Mirõl szól a projekt?
 * Az alábbi projekt egy olyan program megvalósítására törekszik, amely egy multiplex mozi jegyeladásait képes kezelni. A program számos funkciói közé tartozik például a mozi által vetített filmek adatainak (cím, rendezõ, szinopszis, hossz) megtekinthetõsége; elõadás meghirdetése; lehetõség van a meghirdetett elõadásokra helyet foglalni stb.
@@ -15,12 +15,12 @@ A másik felhasználói réteg (user, guest) a fentiekhez képest kevesebb funkcióval
 
 * A program számos funkciója átláthatóbbá, könnyebben kezelhetõvé teszi a jegyeladások nyilvántartását, kezelését. Ha ugyanezen adatokat papíron vezetnék a dolgozók és onnan kéne kikeresni az egyes adatokat, sokkal nehezebb dolguk lenne, valamint sokkal tovább tartana.
 
-1.2. ### Nem funkcionális elvárások: ###
+   1.2. ### Nem funkcionális elvárások: ###
 * Felhasználóbarát, egyszerû, letisztult felület
 * Keresési eredmények gyors megjelenítése
 * Jelszavas azonosítás
 
-1.3. ### Funkcionális követelmények: ###
+   1.3. ### Funkcionális követelmények: ###
 * A fõoldalon megjelenik a napi program, azaz mely filmeket mikor vetítik, a mozi mely termében, amit minden szerepkörû (user, admin, guest) felhasználó megtekinthet.
 * A filmeket kiválasztva megjelenik annak részletes leírása (cím, rendezõ, szinopszis, hossz, bevitel dátuma), valamint az összes elõadás idõpontja.
 * Az idõpontot kiválasztva lehetõség nyílik helyfoglalásra az adott elõadásra. Ekkor a felhasználónak meg kell adnia a lefoglalandó hely sorszámát illetve oszlopszámát – ügyelve a terem kapacitására. Csak a szabad helyek foglalhatók le. A felhasználónak továbbá meg kell adnia nevét, telefonszámát, valamint email címét.
@@ -30,7 +30,7 @@ A másik felhasználói réteg (user, guest) a fentiekhez képest kevesebb funkcióval
 
 2. ## Tervezés ##
 
-2.1. ### Adatbázis modell: ###
+   2.1. ### Adatbázis modell: ###
    * Adatbázis sémák leírása:
 ![ide kattintva elérhetõ az adatbázis séma](resources/tables.png)
    * Egyed-kapcsolat diagram:
@@ -38,5 +38,4 @@ A másik felhasználói réteg (user, guest) a fentiekhez képest kevesebb funkcióval
 
 Az ábra egyszerûsége végett a kapcsolótáblák nem szerepelnek az egyed-kapcsolat diagramon.
 
-2.2. ### Végpontok: ###
-*
+   2.2. ### Végpontok: ###
