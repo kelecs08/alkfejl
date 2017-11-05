@@ -1,19 +1,23 @@
-Beadandó feladat Alkalmazások fejlesztése nevezetû tárgyra.
-Készítette: Kelecsényi Anna és Csapó Dániel
+##Beadandó feladat Alkalmazások fejlesztése nevezetû tárgyra.
+###Készítette: Kelecsényi Anna és Csapó Dániel
 
 1. A feladat rövid leírása:
 Mirõl szól a projekt?
 * Az alábbi projekt egy olyan program megvalósítására törekszik, amely egy multiplex mozi jegyeladásait képes kezelni. A program számos funkciói közé tartozik például a mozi által vetített filmek adatainak (cím, rendezõ, szinopszis, hossz) megtekinthetõsége; elõadás meghirdetése; lehetõség van a meghirdetett elõadásokra helyet foglalni stb.
+
 * A program célközönsége:
-> A program felhasználói egyrészt a mozi alkalmazottjai (admin), akik a program segítségével képesek elõadásokat meghirdetni adott idõpontra, valamint azokat törölhetik is. A lefoglalt, valamint a szabad helyeket ki tudják adni.
-> A másik felhasználói réteg (user, guest) a fentiekhez képest kevesebb funkcióval rendelkezik. Õk az elõadások kezelésére nem jogosultak, de meg tudják tekinteni, milyen filmeket vetít a mozi és mikor, stb., valamint jegyet foglalhatnak elõadásokra.
+
+A program felhasználói egyrészt a mozi alkalmazottjai (admin), akik a program segítségével képesek elõadásokat meghirdetni adott idõpontra, valamint azokat törölhetik is. A lefoglalt, valamint a szabad helyeket ki tudják adni.
+
+ A másik felhasználói réteg (user, guest) a fentiekhez képest kevesebb funkcióval rendelkezik. Õk az elõadások kezelésére nem jogosultak, de meg tudják tekinteni, milyen filmeket vetít a mozi és mikor, stb., valamint jegyet foglalhatnak elõadásokra.
 
 * A program számos funkciója átláthatóbbá, könnyebben kezelhetõvé teszi a jegyeladások nyilvántartását, kezelését. Ha ugyanezen adatokat papíron vezetnék a dolgozók és onnan kéne kikeresni az egyes adatokat, sokkal nehezebb dolguk lenne, valamint sokkal tovább tartana.
 2. Adatbázis modell:
-	Adatbázis sémák leírása:
+   * Adatbázis sémák leírása:
 ![ide kattintva elérhetõ az adatbázis séma](resources/tables.png)
-	Egyed-kapcsolat diagram:
+   * Egyed-kapcsolat diagram:
 ![  ide kattintva elérhetõ az adatbázis terv](resources/tables2.png)
+
 Az ábra egyszerûsége végett a kapcsolótáblák nem szerepelnek az egyed-kapcsolat diagramon.
 3. Funkcionális követelmények:
 * A fõoldalon megjelenik a napi program, azaz mely filmeket mikor vetítik, a mozi mely termében, amit minden szerepkörû (user, admin, guest) felhasználó megtekinthet.
