@@ -3,7 +3,7 @@
 
 ## 1.Követelményanalízis ##
 
-    ### 1.1.A feladat rövid leírása: ###
+ ### 1.1.A feladat rövid leírása: ###
 
 Mirõl szól a projekt?
 * Az alábbi projekt egy olyan program megvalósítására törekszik, amely egy multiplex mozi jegyeladásait képes kezelni. A program számos funkciói közé tartozik például a mozi által vetített filmek adatainak (cím, rendezõ, szinopszis, hossz) megtekinthetõsége; elõadás meghirdetése; lehetõség van a meghirdetett elõadásokra helyet foglalni stb.
