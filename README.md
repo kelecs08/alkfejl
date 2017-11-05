@@ -39,3 +39,24 @@ A másik felhasználói réteg (user, guest) a fentiekhez képest kevesebb funkcióval
 Az ábra egyszerûsége végett a kapcsolótáblák nem szerepelnek az egyed-kapcsolat diagramon.
 
 #### 2.2.Végpontok: ####
+* GET / - Fõoldal, napi program
+* GET /login – Bejelentkezõ oldal
+* POST /login – Bejelentkezés elküldése
+* POST /logout – Kijelentkezés
+* GET /debug – Jelenlegi felhasználó lekérdezése
+* GET /add – Film hozzáadása oldal
+* POST /add - Film hozzáadásának elküldése
+* GET /film/:id – Film részletes leírása, film vetítésének idõpontjai
+* GET /performance/:id Kiválasztott elõadás foglalási oldala
+* POST /performance/:id/book Foglalás elküldése
+* GET /:id/edit – Film adatainak szerkesztése
+* POST /:id/edit Film szerkesztett adatainak elküldése
+* POST /:id/delete – Film törlése
+* GET /performance/add – Elõadás hozzáadása oldal
+* POST /performance/add – Elõadás hozzáadásának elküldése
+* GET /performance/:id/edit – Elõadás szerkesztésének oldala
+* POST /performance/:id/edit – Elõadás szerkesztett adatainak elküldése
+
+Egy végpont részletes leírása(/performance/:id/book):
+![  ide kattintva elérhetõ az szekvenciadiagram](resources/sequence.png)
+
