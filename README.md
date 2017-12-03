@@ -58,9 +58,9 @@ Az ábra egyszerûsége végett a kapcsolótáblák nem szerepelnek az egyed-kapcsolat 
 * POST /performance/:id/edit – Elõadás szerkesztett adatainak elküldése
 
 Egy végpont részletes leírása(/performance/:id/book):
-![  ide kattintva elérhetõ az szekvenciadiagram](resources/sequence.png)
+![ide kattintva elérhetõ az szekvenciadiagram](resources/sequence.png)
 
 Használati eset diagram:
-![  ide kattintva elérhetõ a használati eset diagram](resources/use_case.png)
+![ide kattintva elérhetõ a használati eset diagram](resources/use_case.png)
 
 
