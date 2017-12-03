@@ -57,10 +57,34 @@ Az ábra egyszerûsége végett a kapcsolótáblák nem szerepelnek az egyed-kapcsolat 
 * GET /performance/:id/edit – Elõadás szerkesztésének oldala
 * POST /performance/:id/edit – Elõadás szerkesztett adatainak elküldése
 
-Egy végpont részletes leírása(/performance/:id/book):
+    * Egy végpont részletes leírása(/performance/:id/book):
 ![ide kattintva elérhetõ az szekvenciadiagram](resources/sequence.png)
 
-Használati eset diagram:
+#### 2.3.Használati eset diagram (use-case modell): ####
 ![ide kattintva elérhetõ a használati eset diagram](resources/use_case.png)
+* Guest: nem regisztrált felhasználó, a filmeket, elõadásokat megtekintheti, de pl.: jegyet nem foglalhat elõadásra.
+* User: regisztrált és bejelentkezett látogató, aki már jogosult pl.: jegyfoglalásra.
+* Admin: olyan felhasználó, akinek a program minden funkcionalitásához van jogosultsága.
 
+## 3.Implementáció ##
+
+#### 3.1.Felhasznált eszközök: ####
+* Git verziókezelõ, Github a projekt közzétételéhez
+* Node.js JavaScript környezet
+* Angular.js TypeScript környezet
+* Visual Studio Code lokális IDE
+
+#### 3.2.Fejlesztõkörnyezet felállítása: ####
+* Git verziókezelõ telepítése - Githubon történõ regisztráció ajánlott
+* Node.js környezet telepítése
+* Projekt klónozása lokális gépre: git clone https://github.com/kelecs08/alkfejl.git , vagy tömörített projekt letöltése és kicsomagolása
+* A projektkönyvtárban a függõségek telepítése: npm install
+* App indítása: nmp start - alapesetben a localhost:4200-on fut a program
+
+
+#### 3.3.Könyvtárstruktúra: ####
+* app
+* classes
+* components
+* services
 
