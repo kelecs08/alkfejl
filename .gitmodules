@@ -1,0 +1,3 @@
+[submodule "cinema-angular"]
+	path = cinema-angular
+	url = https://github.com/kelecs08/alkfejl/angular.git
