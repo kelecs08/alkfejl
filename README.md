@@ -60,3 +60,7 @@ Az ábra egyszerûsége végett a kapcsolótáblák nem szerepelnek az egyed-kapcsolat 
 Egy végpont részletes leírása(/performance/:id/book):
 ![  ide kattintva elérhetõ az szekvenciadiagram](resources/sequence.png)
 
+Használati eset diagram:
+![  ide kattintva elérhetõ a használati eset diagram](resources/use_case.png)
+
+
