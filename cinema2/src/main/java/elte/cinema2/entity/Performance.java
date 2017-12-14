@@ -42,9 +42,9 @@ public class Performance extends BaseEntity {
     @OneToMany(targetEntity = Seat.class, cascade = CascadeType.ALL, mappedBy = "performance")
     private List<Seat> seats;
     
-    @JoinColumn
+ /*   @JoinColumn
     @ManyToMany(targetEntity = User.class)
-    private List<User> users;
+    private List<User> users;*/
     
     
 }

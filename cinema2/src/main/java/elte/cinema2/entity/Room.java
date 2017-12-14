@@ -1,5 +1,6 @@
 package elte.cinema2.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -26,6 +27,7 @@ public class Room extends BaseEntity{
     @Column(nullable = false)
     private int columnsNumber;
     
+    @JsonIgnore
     @OneToMany(targetEntity = Performance.class, cascade = CascadeType.ALL, mappedBy = "room")
     private List<Performance> performances;
     

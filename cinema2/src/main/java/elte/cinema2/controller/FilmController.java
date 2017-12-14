@@ -20,20 +20,26 @@ public class FilmController {
     @Autowired
     private FilmRepository filmRepository;
     
-    @GetMapping("")
+    @GetMapping("") //lekérés
     public ResponseEntity<Iterable<Film>> getAllFilms() {
         Iterable<Film> films = filmRepository.findAll();
         return ResponseEntity.ok(films);
     }
     
-    @PostMapping("")
-    public ResponseEntity<Film> create(@RequestBody Film item) {
-        Film saved = filmRepository.save(item);
+    @GetMapping("/{id}")
+    public ResponseEntity<Film> getOne(@PathVariable Long id) {
+        Film film = filmRepository.findOne(id);
+        return ResponseEntity.ok(film);
+    }
+    
+    @PostMapping("") //új létrehozása
+    public ResponseEntity<Film> create(@RequestBody Film film) {
+        Film saved = filmRepository.save(film);
         return ResponseEntity.ok(saved);
     }
     
-    @PutMapping("/{id}")
-    public ResponseEntity<Film> update(@PathVariable Integer id, @RequestBody Film film) {
+    @PutMapping("/{id}") //módosítás
+    public ResponseEntity<Film> update(@PathVariable Long id, @RequestBody Film film) {
         Film current = filmRepository.findOne(id);
         current.setTitle(film.getTitle());
         current.setDirector(film.getDirector());
@@ -44,7 +50,7 @@ public class FilmController {
     }
     
     @DeleteMapping("/{id}")
-    public ResponseEntity update(@PathVariable Integer id) {
+    public ResponseEntity update(@PathVariable Long id) {
         filmRepository.delete(id);
         return ResponseEntity.ok().build();
     }

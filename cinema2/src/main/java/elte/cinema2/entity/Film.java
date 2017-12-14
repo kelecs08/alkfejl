@@ -19,7 +19,6 @@ import lombok.NoArgsConstructor;
 @EqualsAndHashCode(callSuper = true)
 public class Film extends BaseEntity {
     
-    
     @Column(nullable = false)
     private String title;
     
@@ -32,10 +31,7 @@ public class Film extends BaseEntity {
     @Column(nullable = false)
     private int length;
     
- //   @Column(nullable = false)
- //   private Date entryDate;
-    
-    //@JsonIgnore
+    @JsonIgnore
     @OneToMany(targetEntity = Performance.class, cascade = CascadeType.ALL, mappedBy = "film")
     private List<Performance> performances;
     

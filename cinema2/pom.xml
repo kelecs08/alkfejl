@@ -44,7 +44,7 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
+		<dependency> <!-- automatic generation of 'primitive' methods -->
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
@@ -54,12 +54,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	 <dependency>
-	  <groupId>org.springframework.security</groupId>
-	  <artifactId>spring-security-crypto</artifactId>
-	  <version>4.2.3.RELEASE</version>
-	  <type>jar</type>
-	 </dependency>
+                <dependency>
+                        <groupId>org.springframework.security</groupId>
+                        <artifactId>spring-security-crypto</artifactId>
+                        <version>4.2.3.RELEASE</version>
+                        <type>jar</type>
+                </dependency>
 	</dependencies>
 
 	<build>

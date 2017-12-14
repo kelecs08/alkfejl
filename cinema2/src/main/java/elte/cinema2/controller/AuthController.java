@@ -6,25 +6,21 @@ import elte.cinema2.service.SessionService;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/auth")
 public class AuthController {
     
     @Autowired
     private UserRepository userRepository;
     @Autowired
     private SessionService sessionService;
-    @Autowired
-    private PasswordEncoder passwordEncoder;
+ //   @Autowired
+ //   private PasswordEncoder passwordEncoder;
     
     @RequestMapping("/login")
     public ResponseEntity<User> login(@RequestBody User user) {

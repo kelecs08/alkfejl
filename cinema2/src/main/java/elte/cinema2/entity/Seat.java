@@ -20,9 +20,9 @@ public class Seat extends BaseEntity {
     @ManyToOne(targetEntity = Performance.class)
     private Performance performance;
     
- /*   @JoinColumn
+    @JoinColumn
     @ManyToOne(targetEntity = Room.class)
-    private Room room;*/
+    private Room room;
     
     @Column(nullable = false)
     private int rowNumber;
