@@ -32,9 +32,11 @@ public class FilmController {
         return ResponseEntity.ok(film);
     }
     
+    
     @PostMapping("") //új létrehozása
     public ResponseEntity<Film> create(@RequestBody Film film) {
         Film saved = filmRepository.save(film);
+        System.out.println(saved.toString());
         return ResponseEntity.ok(saved);
     }
     
