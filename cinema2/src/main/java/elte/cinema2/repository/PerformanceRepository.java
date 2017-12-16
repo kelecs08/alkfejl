@@ -7,7 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface PerformanceRepository extends CrudRepository<Performance, Long> {
     
-    List<Performance> findAllByFilmId(Long filmId);
+    List<Performance> findByFilmId(Long filmId);
 //    List<Performance> findAllByRoom(Room room);
     List<Performance> findAllByStartingTime(Date startingTime);
 }

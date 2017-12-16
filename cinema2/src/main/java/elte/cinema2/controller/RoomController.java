@@ -4,6 +4,7 @@ import elte.cinema2.entity.Room;
 import elte.cinema2.repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,6 +27,12 @@ public class RoomController {
     public ResponseEntity<Room> getOne(@PathVariable Long id) {
         Room room = roomRepository.findOne(id);
         return ResponseEntity.ok(room);
+    }
+    
+    @DeleteMapping("/{id}")
+    public ResponseEntity update(@PathVariable Long id) {
+        roomRepository.delete(id);
+        return ResponseEntity.ok().build();
     }
     
 }
