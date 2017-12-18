@@ -2,17 +2,29 @@ INSERT INTO USER(ID, VERSION, USER_NAME, PASSWORD, ROLE) VALUES(10, 0, 'admin', 
 INSERT INTO USER(ID, VERSION, USER_NAME, PASSWORD, ROLE) VALUES(11, 0, 'alma', 'korte', 'USER');
 INSERT INTO USER(ID, VERSION, USER_NAME, PASSWORD, ROLE) VALUES(12, 0, 'admin2', 'admin', 'ADMIN');
 INSERT INTO USER(ID, VERSION, USER_NAME, PASSWORD, ROLE) VALUES(13, 0, 'anna', 'anna', 'USER');
+INSERT INTO USER(ID, VERSION, USER_NAME, PASSWORD, ROLE) VALUES(14, 0, 'dani', 'dani', 'USER');
 
 INSERT INTO FILM(ID, VERSION, TITLE, DIRECTOR, SYNOPSIS, LENGTH) VALUES(1, 0, 'How to train your dragon', 'Dean DeBlois, Chris Sanders', 'A harpless young viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed.', 98);
 INSERT INTO FILM(ID, VERSION, TITLE, DIRECTOR, SYNOPSIS, LENGTH) VALUES(2, 0, 'The hangover', 'Todd Phillipps', 'Three buddies wake up from a bachelor party in Las Vegas, with no memory of the previous night and the bachelor is missing. They make their way around the city in order to find their missing friend before his wedding.', 100);
 INSERT INTO FILM(ID, VERSION, TITLE, DIRECTOR, SYNOPSIS, LENGTH) VALUES(3, 0, 'Titanic', 'James Cameron', 'Classic', 205);
-INSERT INTO FILM(ID, VERSION, TITLE, DIRECTOR, SYNOPSIS, LENGTH) VALUES(4, 0, 'Star Wars', 'Valaki', 'Classic', 205);
+INSERT INTO FILM(ID, VERSION, TITLE, DIRECTOR, SYNOPSIS, LENGTH) VALUES(4, 0, 'Wonder Woman', 'Patty Jenkins', 'When a pilot crashes and tells of conflict in the outside world, Diana, an Amazonian warrior in training, leaves home to fight a war, discovering her full powers and true destiny.', 141);
+INSERT INTO FILM(ID, VERSION, TITLE, DIRECTOR, SYNOPSIS, LENGTH) VALUES(5, 0, 'The hunger games', 'Gary Ross', 'Katniss Everdeen voluntarily takes the place of her younger sister in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.', 142);
+INSERT INTO FILM(ID, VERSION, TITLE, DIRECTOR, SYNOPSIS, LENGTH) VALUES(6, 0, 'Happy Death Day', 'Christopher Landon', 'A college student must relive the day of her murder over and over again, in a loop that will end only when she discovers the identity of her killer.', 96);
+INSERT INTO FILM(ID, VERSION, TITLE, DIRECTOR, SYNOPSIS, LENGTH) VALUES(7, 0, 'A Bad Moms Christmas', 'Jon Lucas, Scott Moore', 'As their own mothers drop in unexpectedly, our three under-appreciated and over-burdened moms rebel against the challenges and expectations of the Super Bowl for mothers: Christmas.', 94);
+INSERT INTO FILM(ID, VERSION, TITLE, DIRECTOR, SYNOPSIS, LENGTH) VALUES(8, 0, 'Home Again', 'Hallie Meyers-Shyer', 'Life for a single mom in Los Angeles takes an unexpected turn when she allows three young guys to move in with her.', 87);
+INSERT INTO FILM(ID, VERSION, TITLE, DIRECTOR, SYNOPSIS, LENGTH) VALUES(9, 0, 'Justice League', 'Zack Snyder', 'Fueled by his restored faith in humanity and inspired by Superman s selfless act, Bruce Wayne enlists the help of his newfound ally, Diana Prince, to face an even greater enemy.', 120);
+INSERT INTO FILM(ID, VERSION, TITLE, DIRECTOR, SYNOPSIS, LENGTH) VALUES(10, 0, 'Suicide Squad', 'David Ayer', 'A secret government agency recruits some of the most dangerous incarcerated super-villians to form a defensive task force. Their first mission: sava the world from the apocalypse.', 123);
 
 INSERT INTO ROOM(ID, VERSION, NAME, ROWS_NUMBER, COLUMNS_NUMBER) VALUES(1, 0, 'Room 1', 10, 10);
 INSERT INTO ROOM(ID, VERSION, NAME, ROWS_NUMBER, COLUMNS_NUMBER) VALUES(2, 0, 'Room 2', 9, 9);
 INSERT INTO ROOM(ID, VERSION, NAME, ROWS_NUMBER, COLUMNS_NUMBER) VALUES(3, 0, 'Room 3', 8, 8);
 INSERT INTO ROOM(ID, VERSION, NAME, ROWS_NUMBER, COLUMNS_NUMBER) VALUES(4, 0, 'Room 4', 7, 7);
 INSERT INTO ROOM(ID, VERSION, NAME, ROWS_NUMBER, COLUMNS_NUMBER) VALUES(5, 0, 'Room 5', 6, 6);
+INSERT INTO ROOM(ID, VERSION, NAME, ROWS_NUMBER, COLUMNS_NUMBER) VALUES(6, 0, 'Room 6', 5, 5);
+INSERT INTO ROOM(ID, VERSION, NAME, ROWS_NUMBER, COLUMNS_NUMBER) VALUES(7, 0, 'Room 7', 7, 7);
+INSERT INTO ROOM(ID, VERSION, NAME, ROWS_NUMBER, COLUMNS_NUMBER) VALUES(8, 0, 'Room 8', 6, 6);
+INSERT INTO ROOM(ID, VERSION, NAME, ROWS_NUMBER, COLUMNS_NUMBER) VALUES(9, 0, 'Room 9', 6, 6);
+INSERT INTO ROOM(ID, VERSION, NAME, ROWS_NUMBER, COLUMNS_NUMBER) VALUES(10, 0, 'Room 10', 5, 5);
 
 INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(1, 0, {ts '2018-01-01 11:15:00.00'}, 1, 1);
 INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(2, 0, {ts '2018-01-01 15:30:00.00'}, 1, 2);
@@ -23,4 +35,14 @@ INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(6, 
 INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(7, 0, {ts '2018-01-01 19:45:00.00'}, 2, 2);
 INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(8, 0, {ts '2018-01-01 17:45:00.00'}, 3, 4);
 INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(9, 0, {ts '2018-01-01 20:00:00.00'}, 3, 5);
-INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(10, 0, {ts '2018-01-01 16:30:00.00'}, 3, 3);
+INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(10, 0, {ts '2018-01-01 16:30:00.00'}, 4, 3);
+INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(11, 0, {ts '2018-01-01 11:15:00.00'}, 5, 10);
+INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(12, 0, {ts '2018-01-01 15:30:00.00'}, 5, 6);
+INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(13, 0, {ts '2018-01-01 19:30:00.00'}, 6, 8);
+INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(14, 0, {ts '2018-01-01 21:15:00.00'}, 6, 7);
+INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(15, 0, {ts '2018-01-01 13:00:00.00'}, 7, 9);
+INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(16, 0, {ts '2018-01-01 17:30:00.00'}, 7, 10);
+INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(17, 0, {ts '2018-01-01 19:45:00.00'}, 8, 9);
+INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(18, 0, {ts '2018-01-01 17:45:00.00'}, 8, 7);
+INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(19, 0, {ts '2018-01-01 20:00:00.00'}, 9, 6);
+INSERT INTO PERFORMANCE(ID, VERSION, STARTING_TIME, FILM_ID, ROOM_ID) VALUES(20, 0, {ts '2018-01-01 22:30:00.00'}, 10, 1);

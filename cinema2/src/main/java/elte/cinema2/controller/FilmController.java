@@ -33,9 +33,14 @@ public class FilmController {
     }
     
     
-    @PostMapping("") //új létrehozása
+    @PostMapping("/add") //új létrehozása
     public ResponseEntity<Film> create(@RequestBody Film film) {
-        Film saved = filmRepository.save(film);
+        Film current = new Film();
+        current.setTitle(film.getTitle());
+        current.setDirector(film.getDirector());
+        current.setSynopsis(film.getSynopsis());
+        current.setLength(film.getLength());
+        Film saved = filmRepository.save(current);
         return ResponseEntity.ok(saved);
     }
     
@@ -50,7 +55,7 @@ public class FilmController {
         return ResponseEntity.ok(saved);
     }
     
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity update(@PathVariable Long id) {
         filmRepository.delete(id);
         return ResponseEntity.ok().build();
