@@ -86,7 +86,9 @@ Az ábra egyszerûsége végett a kapcsolótáblák nem szerepelnek az egyed-kapcsolat 
 
 
 #### 3.3.Könyvtárstruktúra: ####
+
 Backend:
+
 * CinemaApplication
 * annotation
     * Role
@@ -113,7 +115,10 @@ Backend:
 * service
     * SessionService
 
+	
+	
 Frontend:
+
 * classes
     * film
     * performance
@@ -156,4 +161,17 @@ A performances menüpontra kattintva megtekinthetjük az adatbázisban levõ elõadás
 Csupán adminisztrátorin jogosultsággal törölhetünk az adatbázisból adott filmet, elõadást, vagy termet. Ehhez a funkcionalitáshoz szintén be kell jelentkezni a megfelelõ felhasználónév-jelszó párossal.
 
 ## 5.Tesztelés ##
+* Login tesztelése: 
+    * egyáltalán elérhetõ a Login menüpont,
+    * ha nem adunk meg sem felhasználónevet, sem pedig jelszót, akkor a Login form-on maradunk
+    * olyan felhasználónév-jelszó párosra, amelyek nem szerepelnek az adatbázisban, nem jelentkezik be, a Login form-on maradunk
+    * megfelelõ adatok megadása esetén rendesen bejelentkezünk
 
+* Film-details tesztelése:
+    * a kezdõoldal a filmeket jeleníti meg, az ide való eljutás mûködik, ez maga a Film menüpont
+    * ha kiválasztunk egy filmet, megfelelõen megjelennek a hozzá tartozó elõadások
+    * egy adott elõadásra kattintva átnavigál a program a Booking menüpont alá
+	
+* Menüsor tesztelése:
+    * a még nem bejelentkezett felhasználók számára nem jelennek meg az Add és a Delete menüpontok, ezeket csak adminisztrátor jogosultságú felhasználók láthatják és használhatják
+    * ha megfelelõ jogosultságú felhasználó van bejelentkezve, számára elérhetõ a fentebb említett két funkció
